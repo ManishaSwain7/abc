@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contribute">Contribute</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="home" class="section">
+            <h1>Welcome to ABC Project</h1>
+            <p>This is a demonstration project showcasing a simple navigation bar and page structure.</p>
+        </section>
+
+        <section id="about" class="section">
+            <h1>About</h1>
+            <p>The ABC project is designed as a learning resource and example repository for web development.</p>
+        </section>
+
+        <section id="features" class="section">
+            <h1>Features</h1>
+            <ul>
+                <li>Responsive navigation bar</li>
+                <li>Clean and modern design</li>
+                <li>Easy to customize</li>
+                <li>Open for contributions</li>
+            </ul>
+        </section>
+
+        <section id="contribute" class="section">
+            <h1>Contribute</h1>
+            <p>We welcome contributions! Please check out our <a href="CONTRIBUTING.md">Contributing Guidelines</a> to get started.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h1>Contact</h1>
+            <p>Feel free to reach out through GitHub issues or pull requests.</p>
+        </section>
+    </div>
+</body>
+</html>
